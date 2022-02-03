@@ -1,8 +1,14 @@
-
+body {
+    background-color: rgba(108, 140, 209, 0.87);
+    background-image: url("../assets/fairy-home.png");
+    background-size: 100%;
+    background-position: center;
+}
 h1{
     text-align: center;
 }
 main {
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
