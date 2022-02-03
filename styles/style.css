@@ -1,20 +1,31 @@
 body {
     background-color: rgba(108, 140, 209, 0.87);
-    background-image: url("../assets/fairy-home.png");
-    background-size: 100%;
-    background-position: center;
 }
 h1{
     text-align: center;
 }
 main {
-    background-color: transparent;
+    background-color: rgba(108, 140, 209, 0.87);
+    background-image: url("../assets/fairy-home.png");
+    background-size: 100%;
+    background-position: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: calc(var(--footer-height));
+    min-height: 500px;
 }
+
+.monster {
+    background-color: rgba(197, 207, 228, 0.555);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
 footer {
+    color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
