@@ -16,8 +16,22 @@ main {
     min-height: 500px;
 }
 
+#user {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-HP {
+    background-color: rgba(197, 207, 228, 0.555);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
 .monster {
     background-color: rgba(197, 207, 228, 0.555);
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

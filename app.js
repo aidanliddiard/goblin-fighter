@@ -4,6 +4,7 @@ import { renderMonster } from './utils.js';
 const form = document.getElementById('input-monster');
 const monstersList = document.querySelector('.monsters');
 
+//let userHP = 10;
 
 let monsters = [
     {
@@ -45,6 +46,8 @@ function displayMonsters() {
 
     for (let monster of monsters) {
         const monsterEl = renderMonster(monster);
+
+
         monstersList.append(monsterEl);
     }
       
