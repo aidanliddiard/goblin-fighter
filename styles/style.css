@@ -8,13 +8,30 @@ main {
     background-color: rgba(108, 140, 209, 0.87);
     background-image: url("../assets/fairy-home.png");
     background-size: 100%;
+    min-height: 500px;
     background-position: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: calc(var(--footer-height));
-    min-height: 500px;
 }
+
+#results {
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(197, 207, 228, 0.555);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#monster-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
 
 #user {
     display: flex;

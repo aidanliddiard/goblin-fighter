@@ -4,7 +4,7 @@ export function renderMonster(array) {
     const img = document.createElement('img');
     const h4 = document.createElement('h4');
     if (array.hp === 0){
-        img.src = 'assets/icons8-cute-dead-monster-96.png';
+        img.src = 'assets/icons8-cute-dead-monster-96 .png';
         h4.textContent = `Ghost ${array.name} ${array.hp} HP`;
 
     }
