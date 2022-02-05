@@ -7,7 +7,8 @@ const defeatedMonstersSpan = document.getElementById('defeated-monsters');
 const fairyHP = document.getElementById('hp');
 const userAction = document.getElementById('user-actions');
 const monsterAction = document.getElementById('monster-actions');
-const modalClass = document.querySelector('.modal');
+const modalClass = document.querySelector('.modal-hidden');
+const closeBtn = document.getElementById('close');
 
 let userHP = 10;
 let defeatedMonsters = 0;
@@ -106,7 +107,7 @@ function monsterClickHandler(monsterData) {
             monsterAction.textContent = (`${monsterData.name} missed you! Your forcefield spell worked.`);
         }
         fairyHP.textContent = userHP;
-    }, 2000
+    }, 1500
     );
 
     if (monsterData.hp === 0) {
@@ -128,3 +129,7 @@ function monsterClickHandler(monsterData) {
     }
 
 }
+
+closeBtn.addEventListener('click', () => {
+    modalClass.classList.remove('visible');
+});

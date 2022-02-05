@@ -7,8 +7,9 @@ h1{
 main {
     background-color: rgba(108, 140, 209, 0.87);
     background-image: url("../assets/fairy-home.png");
-    background-size: 100%;
-    min-height: 500px;
+    background-size: 90%;
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: row;
@@ -77,6 +78,7 @@ main {
 .modal {
     background-color: seashell;
     height: fit-content;
+    padding: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
