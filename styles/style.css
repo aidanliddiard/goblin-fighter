@@ -1,85 +1,92 @@
-
 body {
-    /* feel free to update these css variables for a quick theme */
-    
-    --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
-    
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-        
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: rgba(108, 140, 209, 0.87);
 }
-
+h1{
+    text-align: center;
+}
 main {
+    background-color: rgba(108, 140, 209, 0.87);
+    background-image: url("../assets/fairy-home.png");
+    background-size: 90%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
     margin-bottom: calc(var(--footer-height));
 }
 
-section {
-    background-color: var(--color5);
-    max-width: 80%;
+#results {
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(197, 207, 228, 0.555);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#monster-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+#user {
     display: flex;
     flex-direction: column;
+}
+
+#user-HP {
+    background-color: rgba(197, 207, 228, 0.555);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.monster {
+    background-color: rgba(197, 207, 228, 0.555);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.modal-hidden {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    visibility: hidden;
+    transition: visibility 0s, opacity 0,5s;
 }
 
-header {
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: seashell;
+    height: fit-content;
+    padding: 15px;
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.gutter-right {
-    margin-right: 20px;
-}
-
-header img {
-    height: var(--header-height);
-}
-
-p {
-    margin: var(--gutter);
-}
-  
 footer {
+    color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
